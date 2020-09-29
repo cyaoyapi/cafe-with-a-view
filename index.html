@@ -8,24 +8,46 @@
 		<title>Cafe with a Vue</title>
 	</head>
 	<body>
-		<div id="app">
-			<h1>La belle vue</h1>
+		<div id="app" class="app">
+			<h1>{{ restaurantName }}</h1>
 			<p class="description">
-				Bienvenue dans notre café {{ restaurantName }} ! Nous sommes réputés pour notre
-				pain et nos merveilleuses pâtisseries. Faites vous plaisir dès le matin
-				ou avec un goûter réconfortant. Mais attention, vous verrez qu'il est
-				difficile de s'arrêter.
+				Bienvenue dans notre café {{ restaurantName }}! Nous sommes réputés pour
+				notre pain et nos merveilleuses pâtisseries. Faites vous plaisir dès le
+				matin ou avec un goûter réconfortant. Mais attention, vous verrez qu'il
+				est difficile de s'arrêter.
 			</p>
+
+			<h2>Contactez nous</h2>
+			<p>Adresse : {{ address }}</p>
+			<p>Téléphone : {{ phoneNumber }}</p>
+			<p>Email : {{ email }}</p>
+			<p>Horaires :</p>
+			<ul>
+				<li>L-V: 06:00 à 16:00</li>
+				<li>Samedi: 07:00 à 14:00</li>
+				<li>Dimanche: 07:00 à 12:00</li>
+			</ul>
+
 			<footer class="footer">
-				<p>Copyright {{ restaurantName }} 2020</p>
+				<p>Copyright {{ restaurantName }} 2019</p>
 			</footer>
 		</div>
+
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<script>
 			const app = new Vue({
 				el: "#app",
 				data: {
-					restaurantName: "La Belle Vue"
+					restaurantName: "Café avec vue",
+					address: "18 avenue du Beurre, Paris, France",
+					phoneNumber: "01 88 88 88 88",
+					email: "hello@cafewithavue.bakery"
+				},
+				computed: {
+					copyrightText(){
+						const year = new Date().getFullYear() ;
+						return `Copyright ${this.restaurantName} ${year}` ;
+					}
 				}
 			})
 		</script>

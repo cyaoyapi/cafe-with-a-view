@@ -1,9 +1,9 @@
-Exercice du chapitre 2 / Partie 1 : ["Créez votre première application Vue.js"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6907296-creez-votre-premiere-application-vue-js)
+Exercice du chapitre 3 / Partie 1 : ["Stockez et gérez des données"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6861941-stockez-et-gerez-des-donnees)
 
 Instructions
 
-  - Ajoutez Vue.js à  index.html  pour le convertir en application monopage.
+  - Remplacez le nom du restaurant par "Café avec vue". Cela devrait être mis à jour partout sur le site.
 
-  - Votre application doit avoir une propriété dans  data  appelée  restaurantName.
+  - Déplacez les données sur le restaurant dans le data store (le numéro de téléphone, l'adresse email et l'adresse postale).
 
-  - Le nom du restaurant doit être rendu à l'aide de la syntaxe en moustache.
+  - Créez une propriété calculée pour le texte de copyright dans le footer.
