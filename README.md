@@ -1,9 +1,13 @@
-Exercice du chapitre 3 / Partie 1 : ["Stockez et gérez des données"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6861941-stockez-et-gerez-des-donnees)
+Exercice du chapitre 4 / Partie 1 : ["Utilisez les directives Vue pour gérer des problèmes courants"](hhttps://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862376-utilisez-les-directives-vue-pour-gerer-des-problemes-courants)
 
 Instructions
 
-  - Remplacez le nom du restaurant par "Café avec vue". Cela devrait être mis à jour partout sur le site.
+  - Utilisez la directive  v-for  pour afficher tous les éléments de simpleMenu.
 
-  - Déplacez les données sur le restaurant dans le data store (le numéro de téléphone, l'adresse email et l'adresse postale).
+  - Utilisez la directive  v-if  pour indiquer si un article est "En stock" ou "En rupture de stock".
 
-  - Créez une propriété calculée pour le texte de copyright dans le footer.
+  - Utilisez la directive  v-bind  pour rendre dynamiquement chaque image du menu et remplir son texte  alt.
+
+  - Utilisez la directive  v-on  pour augmenter le total du panier lors de l'ajout d'un article du menu avec une fonction définie dans les méthodes appelées addToShoppingCart.
+
+  - Utiliser v-model pour permettre à l'utilisateur de mettre à jour le nombre d'articles qu'il souhaite mettre lorsqu'il fait un ajout au panier.
