@@ -4,3 +4,6 @@ Exercises du cours ["Créez une application web avec Vue.js"](https://openclassr
   - [Chapitre 2](https://github.com/cyaoyapi/cafe-with-a-view/tree/c2p1)
   - [Chapitre 3](https://github.com/cyaoyapi/cafe-with-a-view/tree/c3p1)
   - [Chapitre 4](https://github.com/cyaoyapi/cafe-with-a-view/tree/c4p1)
+  
+## Partie 2 :
+  - [Chapitre 1](https://github.com/cyaoyapi/cafe-with-a-view/tree/c1p2)
