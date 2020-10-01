@@ -1,5 +1,7 @@
-Exercice du chapitre 4 / Partie 2 : ["Déterminez quand votre code doit s’exécuter"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6863766-determinez-quand-votre-code-doit-s-executer)
+Exercice du chapitre 1 / Partie 3 : ["Gérez les styles de votre application"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6864346-gerez-les-styles-de-votre-application)
 
 Instructions
 
-Utilisez un hook de cycle de vie avant que  MenuItem  ne soit rendu pour vérifier si la date de la  journée est paire. Si c'est le cas, le prix de chaque article devrait être affiché avec une réduction de 10 %.
+  - Migrez tous les styles des sites statiques styles.css dans les fichiers des composants respectifs.
+
+  - Utilisez votre préprocesseur préféré si vous le souhaitez !

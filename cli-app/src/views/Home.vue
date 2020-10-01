@@ -18,6 +18,7 @@
     :quantity="item.quantity" 
     :price="item.price"
     :inStock="item.inStock"
+    class="menu-item"
     />
         </section>
 
@@ -102,5 +103,30 @@ font-family: Avenir, Helvetica, Arial, sans-serif;
 text-align: center;
 color: #2c3e50;
 margin-top: 60px;
+}
+
+.description {
+  max-width: 960px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+  text-align: center;
+  font-style: italic;
+}
+
+.shopping-cart {
+  position: absolute;
+  right: 30px;
+  top: 0;
 }
 </style>

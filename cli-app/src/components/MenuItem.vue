@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="menu-item">
         <img
             class="menu-item__image"
             :src="image.source"
@@ -38,3 +38,20 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+
+.menu-item {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+    &__image {
+    max-width: 300px;
+    }
+
+}
+
+
+</style>
