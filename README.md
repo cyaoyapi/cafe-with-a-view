@@ -1,13 +1,17 @@
-Exercice du chapitre 2 / Partie 2 : ["Facilitez la maintenance grâce aux composants monofichiers"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6863196-facilitez-la-maintenance-grace-aux-composants-monofichiers)
+Exercice du chapitre 3 / Partie 2 : ["Facilitez la maintenance grâce aux composants monofichiers"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6863526-gerez-la-navigation-de-votre-application-avec-le-routeur-vue)
 
 Instructions
 
-  - Migrez le contenu de  index.html  vers  cli-version/src/App.vue
+  - Sauvegardez temporairement le contenu de  App.vue  dans un fichier séparé car il sera écrasé par l'installation.
 
-  - Migrez le répertoire des  images  vers  cli-version/public
+  - Ajoutez le plugin  vue-router  à l'application et n'activez pas le mode historique lors de l'installation (Use history mode for router? =>  N).
 
-  - Mettez à jour le chemin (path) des images dans  simpleMenu  pour qu'il soit relatif et non plus absolu (en supprimant le  .  qui préfixe l'URL).
+  - Migrez les données temporairement sauvegardées de l'ancienne  App.vue  vers  Home.vue
 
-  - Créez un composant pour  MenuItem.vue  et migrez les éléments (items) du menu.
+  - Créez une route statique pour la page de contact à l'url  /contact
 
-  - Utilisez des props pour vous assurer que les données de  MenuItem  sont toujours correctement rendues et qu'elles peuvent toujours mettre à jour le total du panier (astuce : vous pouvez transmettre des fonctions dans les props).
+  - Migrez les coordonnées de  Home.vue  vers  Contact.vue
+
+  - Ajoutez le lien du routeur de contact à  App.vue
+
+  - Activez le mode historique dans la configuration de votre routeur.
