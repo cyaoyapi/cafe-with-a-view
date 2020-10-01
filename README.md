@@ -1,17 +1,5 @@
-Exercice du chapitre 3 / Partie 2 : ["Facilitez la maintenance grâce aux composants monofichiers"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6863526-gerez-la-navigation-de-votre-application-avec-le-routeur-vue)
+Exercice du chapitre 4 / Partie 2 : ["Déterminez quand votre code doit s’exécuter"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6863766-determinez-quand-votre-code-doit-s-executer)
 
 Instructions
 
-  - Sauvegardez temporairement le contenu de  App.vue  dans un fichier séparé car il sera écrasé par l'installation.
-
-  - Ajoutez le plugin  vue-router  à l'application et n'activez pas le mode historique lors de l'installation (Use history mode for router? =>  N).
-
-  - Migrez les données temporairement sauvegardées de l'ancienne  App.vue  vers  Home.vue
-
-  - Créez une route statique pour la page de contact à l'url  /contact
-
-  - Migrez les coordonnées de  Home.vue  vers  Contact.vue
-
-  - Ajoutez le lien du routeur de contact à  App.vue
-
-  - Activez le mode historique dans la configuration de votre routeur.
+Utilisez un hook de cycle de vie avant que  MenuItem  ne soit rendu pour vérifier si la date de la  journée est paire. Si c'est le cas, le prix de chaque article devrait être affiché avec une réduction de 10 %.

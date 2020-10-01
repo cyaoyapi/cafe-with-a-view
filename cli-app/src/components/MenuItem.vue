@@ -7,12 +7,13 @@
         />
         <div>
             <h3>{{ name }}</h3>
+            <p>{{ itemPrice }} €</p>
             <p v-if="inStock">En stock</p>
             <p v-else>En rupture de stock</p>
             <div>
-                <label for="add-item-quantity">Quantité : {{ quantity }}</label> <br><br>
-                <input id="add-item-quantity" type="number" v-model.number="quantity" /> <br><br>
-                <button @click="addToShoppingCart(quantity)">Ajouter au panier d'achat</button> <br><br>
+                <label for="add-item-quantity">Quantité : {{ itemQuantity }}</label> <br><br>
+                <input id="add-item-quantity" type="number" v-model.number="itemQuantity" /> <br><br>
+                <button @click="addToShoppingCart(itemQuantity)">Ajouter au panier d'achat</button> <br><br>
             </div>
         </div>
     </div>
@@ -22,10 +23,17 @@
 <script>
 export default {
     name: "MenuItem",
-    props: ['addToShoppingCart', 'image', 'name', 'inStock'],
+    props: ['addToShoppingCart', 'image', 'name', 'quantity', 'price', 'inStock'],
     data() {
         return {
-            quantity: 1
+            itemQuantity: this.quantity,
+            itemPrice: parseFloat(this.price)
+        }
+    },
+    beforeMount(){
+        const dayNumber = new Date().getDate() ;
+        if(dayNumber % 2 != 0) {
+            this.itemPrice *= 0.99 ;
         }
     }
 }
