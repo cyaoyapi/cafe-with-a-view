@@ -1,5 +1,7 @@
-Exercice du chapitre 4 / Partie 3 : ["Créez des composants flexibles en utilisant les slots"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6865121-creez-des-composants-flexibles-en-utilisant-les-slots)
+Exercice du chapitre 2 / Partie 4 : ["Créez un data store centralisé avec Vuex"](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6869761-creez-un-data-store-centralise-avec-vuex)
 
 Instructions
 
-Refactorez le composant  BaseButton  en utilisant des slots plutôt que les props qui sont définies pour le moment.
+  - Ajoutez Vuex à l'application.
+
+  - Vérifiez que la boilerplate pour le store est bien présente dans un fichier comme  store/index.js.
