@@ -13,7 +13,9 @@
             <div>
                 <label for="add-item-quantity">Quantité : {{ itemQuantity }}</label> <br><br>
                 <input id="add-item-quantity" type="number" v-model.number="itemQuantity" /> <br><br>
-                <button @click="updateShoppingCart">Ajouter au panier d'achat</button> <br><br>
+                <BaseButton @click="updateShoppingCart(quantity)">
+                    Ajouter au panier
+                </BaseButton>
             </div>
         </div>
     </div>
@@ -21,8 +23,13 @@
 </template>
 
 <script>
+import BaseButton from "./BaseButton.vue"
+
 export default {
     name: "MenuItem",
+    components: {
+        BaseButton
+    },
     props: {
         image: {
             type: Object,
