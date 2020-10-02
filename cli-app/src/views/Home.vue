@@ -27,63 +27,23 @@
 
 
         <footer class="footer">
-            <p>Copyright {{ restaurantName }} 2020</p>
+            <p>{{ copyright }}</p>
         </footer>
     </div>
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
 import MenuItem from "../components/MenuItem"
 
 export default {
 name: 'App',
 components: {
 MenuItem,
-},
-data() {
-return {
-  restaurantName: "La belle vue",
-  simpleMenu: [
-    {
-      name: "Croissant",
-      image: {
-        source: "/images/croissant.jpg",
-        alt: "Un croissant"
-      },
-      inStock: true,
-      quantity: 1,
-      price: 2.99
-    },
-    {
-      name: "Baguette de pain",
-      image: {
-        source: "/images/french-baguette.jpeg",
-        alt: "Quatre baguettes de pain"
-      },
-      inStock: true,
-      quantity: 1,
-      price: 3.99
-    },
-    {
-      name: "Éclair",
-      image: {
-        source: "/images/eclair.jpg",
-        alt: "Éclair au chocolat"
-      },
-      inStock: false,
-      quantity: 1,
-      price: 4.99
-    }
-  ],
-  totalArticles: 0,
-}
 },   
 computed: {
-copyright() {
-  const currentYear = new Date().getFullYear()
-
-  return `Copyright ${this.restaurantName} ${currentYear}`
-}
+...mapState(['totalArticles', 'restaurantName', 'simpleMenu']),
+...mapGetters(['copyright'])
 },
 methods: {
   addToShoppingCart(payload){
