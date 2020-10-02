@@ -12,13 +12,12 @@
             <h2>Menu</h2>
     <MenuItem v-for="item in simpleMenu" 
     :key="item.name" 
-    :addToShoppingCart="addToShoppingCart" 
     :image="item.image" 
     :name="item.name" 
     :quantity="item.quantity" 
     :price="item.price"
     :inStock="item.inStock"
-    class="menu-item"
+    @add-items-to-cart="addToShoppingCart"
     />
         </section>
 
@@ -87,9 +86,9 @@ copyright() {
 }
 },
 methods: {
-addToShoppingCart(quantity){
-  this.totalArticles += Number(quantity) ;
-}
+  addToShoppingCart(payload){
+    this.totalArticles += Number(payload.quantity) ;
+  }
 }
 }
 

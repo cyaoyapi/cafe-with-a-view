@@ -13,7 +13,7 @@
             <div>
                 <label for="add-item-quantity">Quantité : {{ itemQuantity }}</label> <br><br>
                 <input id="add-item-quantity" type="number" v-model.number="itemQuantity" /> <br><br>
-                <button @click="addToShoppingCart(itemQuantity)">Ajouter au panier d'achat</button> <br><br>
+                <button @click="updateShoppingCart">Ajouter au panier d'achat</button> <br><br>
             </div>
         </div>
     </div>
@@ -24,10 +24,6 @@
 export default {
     name: "MenuItem",
     props: {
-        addToShoppingCart: {
-            type: Function,
-            required: true,
-        }, 
         image: {
             type: Object,
             required: true,
@@ -59,6 +55,11 @@ export default {
         const dayNumber = new Date().getDate() ;
         if(dayNumber % 2 != 0) {
             this.itemPrice *= 0.99 ;
+        }
+    },
+    methods: {
+        updateShoppingCart(){
+            this.$emit('add-items-to-cart', { quantity: this.itemQuantity }) ;
         }
     }
 }
