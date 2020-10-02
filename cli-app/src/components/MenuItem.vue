@@ -13,7 +13,7 @@
             <div>
                 <label for="add-item-quantity">Quantité : {{ itemQuantity }}</label> <br><br>
                 <input id="add-item-quantity" type="number" v-model.number="itemQuantity" /> <br><br>
-                <BaseButton @click="updateShoppingCart(quantity)">
+                <BaseButton @click="addToShoppingCart(itemQuantity)">
                     Ajouter au panier
                 </BaseButton>
             </div>
@@ -24,6 +24,7 @@
 
 <script>
 import BaseButton from "./BaseButton.vue"
+import { mapActions } from 'vuex'
 
 export default {
     name: "MenuItem",
@@ -65,9 +66,7 @@ export default {
         }
     },
     methods: {
-        updateShoppingCart(){
-            this.$emit('add-items-to-cart', { quantity: this.itemQuantity }) ;
-        }
+    ...mapActions(['addToShoppingCart'])
     }
 }
 </script>

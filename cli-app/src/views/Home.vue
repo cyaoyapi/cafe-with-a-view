@@ -17,7 +17,6 @@
     :quantity="item.quantity" 
     :price="item.price"
     :inStock="item.inStock"
-    @add-items-to-cart="addToShoppingCart"
     />
         </section>
 
@@ -44,11 +43,6 @@ MenuItem,
 computed: {
 ...mapState(['totalArticles', 'restaurantName', 'simpleMenu']),
 ...mapGetters(['copyright'])
-},
-methods: {
-  addToShoppingCart(payload){
-    this.totalArticles += Number(payload.quantity) ;
-  }
 }
 }
 
